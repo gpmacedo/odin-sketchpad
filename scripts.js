@@ -7,14 +7,6 @@ for (let i = 0; i < 16 * 16; i++) {
   container.appendChild(grid);
 }
 
-const allSquares = document.querySelectorAll(".square");
-
-allSquares.forEach((square) => {
-  square.addEventListener("mouseenter", () => {
-    square.style.backgroundColor = "grey";
-  });
-});
-
 btn.addEventListener("click", () => {
   const gridSize = prompt("Escolha o tamanho da grid", "1-100");
   if (gridSize < 1 || gridSize > 100) {
@@ -30,6 +22,18 @@ btn.addEventListener("click", () => {
     squareList.forEach((square) => {
       square.style.width = `calc(100vw/${gridSize})`;
       square.style.height = square.style.width;
+      colorOnHover(square);
     });
   }
+});
+
+const allSquares = document.querySelectorAll(".square");
+
+function colorOnHover(square) {
+  square.addEventListener("mouseenter", () => {
+    square.style.backgroundColor = "grey";
+  });
+}
+allSquares.forEach((square) => {
+  colorOnHover(square);
 });
