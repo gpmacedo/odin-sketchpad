@@ -20,10 +20,6 @@ body {
   height: 6.25vw;
 }
 
-.square:hover {
-  background-color: grey;
-}
-
 .create-new {
   margin-top: 1em;
   margin-bottom: 1em;
