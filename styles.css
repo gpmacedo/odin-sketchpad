@@ -15,3 +15,7 @@
   width: 6.25vw;
   height: 6.25vw;
 }
+
+.square:hover {
+  background-color: grey;
+}
