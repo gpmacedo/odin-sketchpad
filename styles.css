@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.square {
+  border: 1px solid black;
+  height: 2rem;
+  width: 2rem;
+}
