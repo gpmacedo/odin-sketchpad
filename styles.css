@@ -3,8 +3,15 @@
   padding: 0;
 }
 
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
 .square {
+  box-sizing: border-box;
   border: 1px solid black;
-  height: 2rem;
-  width: 2rem;
+  width: 6.25vw;
+  height: 6.25vw;
 }
